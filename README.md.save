@@ -1,0 +1,2 @@
+cd /home/robo/Documents/cartpole ; /usr/bin/env /bin/python /home/robo/.vscode/extensions/ms-python.python-2023.8.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 43457 -- /home/robo/Documents/cartpole/LQR/cartpole_LQR.py 
+# cartpole_controllers
