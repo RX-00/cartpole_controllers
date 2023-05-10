@@ -43,6 +43,7 @@ P = linalg.solve_continuous_are(A, B, Q, R)
 # calculate optimal controller gain
 K = np.dot(np.linalg.inv(R),
            np.dot(B.T, P))
+print(K)
 
 def apply_state_controller(K, x):
     # feedback controller

@@ -22,9 +22,6 @@ env_id = "CartPole-v1"
 # Create the env
 env = gym.make(env_id)
 
-# Create the evaluation env
-eval_env = gym.make(env_id)
-
 # Get the state space and action space
 #s_size = env.observation_space.shape[0]
 s_size = 4
@@ -223,5 +220,5 @@ def test():
 
 
 if __name__ == "__main__":
-    #train()
+    train()
     test()
