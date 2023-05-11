@@ -13,6 +13,13 @@ from collections import deque
 
 
 # ---------- Setting up the environment ------------
+'''
+    Different Environments of Interest:
+    Bipedal Walking
+    Hopper
+    Pendulum
+    CartPole
+'''
 env_id = "CartPole-v1" # should work plug-n-play for other environments too
 
 env = gym.make(env_id)
