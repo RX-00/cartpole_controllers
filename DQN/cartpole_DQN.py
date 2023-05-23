@@ -179,6 +179,7 @@ def test():
     model = Policy(cartpole_hyperparameters["state_space"], cartpole_hyperparameters["action_space"], cartpole_hyperparameters["h_size"]).to(device)
     model.load_state_dict(torch.load("q-fxn.pth", map_location=device))
     state = env.reset()
+    print("Size of reset env dimension: ", state)
     done = False
     i = 0
     x_positions = [state[0]]
@@ -220,5 +221,5 @@ def test():
 
 
 if __name__ == "__main__":
-    train()
+    #train()
     test()
