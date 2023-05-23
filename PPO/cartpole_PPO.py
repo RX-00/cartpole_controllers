@@ -682,7 +682,7 @@ if __name__ == "__main__":
     lr_actor = 0.0003           # learning rate for actor
     lr_critic = 0.001           # learning rate for critic
     
-    is_render = False
+    is_render = True
 
-    train(env_name, has_cont_as, max_ep_len, action_std, K_epochs, eps_clip, gamma, lr_actor, lr_critic)
+    #train(env_name, has_cont_as, max_ep_len, action_std, K_epochs, eps_clip, gamma, lr_actor, lr_critic)
     test(env_name, is_render, has_cont_as, max_ep_len, action_std, K_epochs, eps_clip, gamma, lr_actor, lr_critic)
